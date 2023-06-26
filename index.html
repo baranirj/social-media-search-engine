@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>SESM Integration</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <link href=”//vjs.zencdn.net/7.0/video-js.min.css” rel=”stylesheet”>
+    <script src=”//vjs.zencdn.net/7.0/video.min.js”></script>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/189c8751a4.js" crossorigin="anonymous"></script>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="m-0"><i class="fa fa-search me-2"></i>SESM<span class="fs-5">Integration</span></h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Hashtag</a>
+                        <a href="user.html" class="nav-item nav-link">Users</a>
+                        
+                        <a href="trends.html" class="nav-item nav-link">Trends</a>
+                        
+
+                    </div>
+
+                    <a class="btn btn-secondary text-light rounded-pill py-2 px-4 ms-3">Contact Us</a>
+                </div>
+            </nav>
+
+            <!-- Newsletter Start -->
+            <div class="container-fluid pt-5 bg-primary newsletter mb-5  wow animated zoomIn" data-wow-delay="0.1s">
+                <div class="container px-lg-5 pt-5">
+                    <div class="row align-items-center" style="height: 250px;">
+                        <div class="col-12 col-md-6">
+                            <h3 class="text-white">Ready to get Search A Hashtag</h3>
+                            <small class="text-white">Diam elitr est dolore at sanctus nonumy.</small>
+                            <div class="position-relative w-100 mt-3">
+                                <form action="" id="form-3" href="#main-3" name="action" value="Redirect">
+                                    <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" id="search-3"
+                                        type="text" placeholder="Enter the trending word..." style="height: 48px;" required>
+                                    <button type="submit" 
+                                        class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                            class="fa fa-search text-primary fs-4"></i></button>    
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-center mb-n5 d-none d-md-block">
+                            <img class="img-fluid mt-5" style="height: 250px;" src="img/newsletter.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="navbar-2 container-fluid navbar" style="padding-top:5rem;background-color: white; z-index: 2;">
+                <div class="col-xl-4  navbatr-menu ">
+    
+                   
+                    <button class="btn border btn-white text-dark" id="all1"><img src="assets\images\proxy.svg" alt="">
+                        All</button>
+                    <button class="btn border btn-white text-dark" id="imclick">
+                        <i class="fa-solid fa-gallery-thumbnails"></i>
+                        Images</button>
+                     </div>
+                <div class="col-xl-3">
+                    <form action="">
+                    <input class="form-control" id="Input" type="text" placeholder="Search user..">
+                </form>
+                </div>
+                <div class="col-xl-2 text-center dropdown ">
+                   
+                    <button class="btn border dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Filter By Network
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" id="all">All</a>
+                      <a class="dropdown-item" id="in">Instagram</a>
+                      <a class="dropdown-item" id="fa">Facebook</a>
+                      <a class="dropdown-item" id="you">Youtube</a>
+                      <a class="dropdown-item" id="twit">twitter</a>
+                    </div>
+            </div>
+            <div class="col-xl-2">
+                <button class="btn btn-white text-dark">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected disabled>Filter By language</option>
+                        <option value="in">Tamil</option>
+                        <option value="fa">English</option>
+                        <option value="twit">Hindi</option>
+                        <option value="you">Kannadam</option>
+                      </select></button>
+        </div>
+       
+            </div>
+            <div class="d-flex flex-wrap" id="im">
+                    
+            </div>
+            <!-- Team Start -->
+            <div class="container-fluid py-5 border-shadow-3" id="graph">
+                <div class="container px-lg-5">
+                    
+                    <div class="row" >
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+
+                            <div id="columnchart_material" style="width:600px; height:400px;"></div>
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+
+
+                            <div id="piechart_3d" style="width:600px; height:400px;"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team End -->
+              
+            <div id="main-3" class="main-3 container-fluid  d-flex justify-content-center flex-wrap">
+
+            </div>
+            <video poster=”/path/to/poster.jpg” id=”player” playsinline controls>
+                <source src=”/path/to/video.mp4" type=”video/mp4">
+                <source src=”/path/to/video.webm” type=”video/webm”>
+                
+                <! — Captions are optional →
+                <track kind=”captions” label=”English captions” src=”/path/to/captions.vtt” srclang=”en” default>
+               </video>
+            <!-- Testimonial End -->
+            <!-- JavaScript Libraries -->
+            <script src="https://www.gstatic.com/charts/loader.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+                integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+                crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/wow/wow.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/waypoints/waypoints.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/isotope/isotope.pkgd.min.js"></script>
+            <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+            <!-- Template Javascript -->
+            <script src="js/main.js"></script>
+            <script src="js\hashtagApi.js"></script>
+</body>
+
+</html>
