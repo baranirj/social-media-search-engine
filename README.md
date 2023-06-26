@@ -33,6 +33,11 @@ Features and Functionality:
 
 5. User Empowerment: Social media search engines empower users by providing them with a comprehensive view of information, irrespective of the platform it originates from. This helps combat information silos, misinformation, and enhances transparency in the digital sphere.
 
+# Screenshots
+
+![Image Alt Text](project/IMG-20220826-WA0007.jpg)
+
+
 # Conclusion:
 
 A social media search engine serves as a valuable tool in today's digital age, simplifying the process of accessing and exploring content across various social media platforms. By aggregating information, offering advanced search functionalities, and providing real-time updates, these engines facilitate efficient information discovery, analysis, and engagement. Whether for personal use, professional research, or business.
